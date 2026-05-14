@@ -133,7 +133,7 @@ export default function MainSwiper() {
           <div
             className="w-full text-center font-bold pt-4 lg:pt-8 text-xl md:text-3xl leading-relaxed text-[#aa000d]"
           >
-            <img src={images.saveTheDate} alt="saveTheDate" className="w-50! pb-5 mx-auto z-30" />
+            <img src={images.saveTheDate} alt="saveTheDate" className="w-30! md:w-50! pb-5 mx-auto z-30" />
           </div>
           <div
             className="grid grid-cols-2 justify-center md:gap-16 gap-8 w-full relative"
