@@ -1,0 +1,80 @@
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+}
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 130%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes spinWedding {
+  from {
+    transform: scaleY(1.05) rotate(540deg);
+  }
+  
+  to {
+    transform: scaleY(1.05) rotate(180deg);
+  }
+}
+
+@keyframes spinWeddingReverse {
+  from {
+    transform: scaleY(1.05) rotate(180deg);
+  }
+  
+  to {
+    transform: scaleY(1.05) rotate(540deg);
+  }
+}

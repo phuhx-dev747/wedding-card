@@ -1,0 +1,5 @@
+/* Tailwind CSS */
+@import "tailwindcss";
+
+@import 'swiper/css';
+@import 'swiper/css/effect-cards';
