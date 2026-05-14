@@ -9,7 +9,7 @@ export default function Curtain({
   duration = 2,
 }) {
   const [isPlaying, setIsPlaying] = useState(false)
-  const audioRef = useRef(null)
+  const audioRef = useRef<HTMLAudioElement | null>(null)
 
   const curtainBackground = {
     backgroundImage: `url(${curtainRedRight})`,
@@ -19,10 +19,11 @@ export default function Curtain({
 
   const handleOpenInvitation = async () => {
     if (isPlaying) {
-      setIsPlaying(false);
-      audioRef.current?.pause();
-      return;
+      setIsPlaying(false)
+      audioRef.current?.pause()
+      return
     }
+
     if (!audioRef.current) {
       audioRef.current = new Audio(audioSrc)
       audioRef.current.loop = true
