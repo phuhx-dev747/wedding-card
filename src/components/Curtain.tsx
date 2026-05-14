@@ -7,6 +7,7 @@ import images from "../assets/image";
 
 export default function Curtain({
   duration = 2,
+  delay = 0.7,
 }) {
   const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
@@ -44,13 +45,14 @@ export default function Curtain({
         src={curtainRedLeft}
         alt="curtain-left"
         className="absolute top-0 h-full z-10"
-        initial={{ x: 0 }}
+        initial={{ x: 1 }}
         animate={{
-          x: [0, -window.innerWidth],
+          x: [1, -window.innerWidth],
           display: 'none'
         }}
         transition={{
           duration,
+          delay,
           ease: "easeInOut"
         }} />
       <motion.div
@@ -74,6 +76,7 @@ export default function Curtain({
         }}
         transition={{
           duration,
+          delay,
           ease: "easeInOut"
         }}
       ></motion.div>

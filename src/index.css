@@ -78,3 +78,36 @@ body {
     transform: scaleY(1.05) rotate(540deg);
   }
 }
+
+@font-face {
+  font-family: "artisan";
+  src: url("./assets/artisan.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ephesis";
+  src: url("./assets/ephesis.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lora";
+  src: url("./assets/lora.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.artisan-font {
+  font-family: "artisan", sans-serif !important;
+}
+
+.ephesis-font {
+  font-family: "ephesis", sans-serif !important;
+}
+
+.lora-font {
+  font-family: "lora", sans-serif !important;
+}
